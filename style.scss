@@ -73,6 +73,7 @@ body{
     color: white;
     background-color: #0E0E0E;
     --namecolor : #E40EE4;
+    --cyberyellow : #FFEF00;
 }
 
 a{
@@ -80,13 +81,21 @@ a{
     color: white;
 }
 
+.container{
+    max-width: 1140px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 @mixin titlefont($size) {
     font-family: 'Aldrich', sans-serif;
     font-size: $size;
 }
 
-@mixin maintext {
-    font-family: 'Electrolize', sans-serif;
+@mixin maintext ($size){
+    font-family:'Electrolize', sans-serif;
+    font-size: $size;
 }
 
 /* Header ------------------------- */
@@ -100,6 +109,7 @@ header{
         position: fixed;
         padding: 0 15px;
         top: 0;
+        z-index: 1111;
         width: 100vw;
         align-items: center;
         justify-content: space-between;
@@ -197,14 +207,13 @@ header{
         h2{
             font-size: 100px;
             text-align: center;
-            color: #FFEF00;
+            color: var(--cyberyellow);
            
         }
 
         .mirror{
             position: absolute;
             width: 100%;
-            height: 100%;
             box-sizing: border-box;
             
         } 
@@ -246,3 +255,62 @@ header{
 
 
 /* MY SKILLS ---------------------------------------------------------------- */
+
+
+.skills{
+    background-color: #707070;
+    h2{
+        @include titlefont(100px);
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .front, .back, .personal{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 75px;
+        position: relative;
+        @include maintext(50px);
+    }
+    a{
+       display: flex;
+       align-items: center;
+       span{
+           margin-left: 20px;
+       }
+    }
+
+    .personal{
+        padding-bottom: 100px;
+        margin: 0;
+    }
+    .logo-front, .logo-back, .logo-personal{
+        display: flex;
+        background-color: var(--cyberyellow);
+        color: black;
+        max-height: 135px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        position: absolute;
+        right: 0;
+        z-index: 1 ;
+        
+        p{
+            margin: 0 10px;
+        }
+    }
+    .js{
+        box-sizing: border-box;
+        border: 0.5px black solid;
+    }
+    .br{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+}

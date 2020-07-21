@@ -74,11 +74,19 @@ body {
   color: white;
   background-color: #0E0E0E;
   --namecolor: #E40EE4;
+  --cyberyellow: #FFEF00;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* Header ------------------------- */
@@ -90,6 +98,7 @@ header .navbar {
   position: fixed;
   padding: 0 15px;
   top: 0;
+  z-index: 1111;
   width: 100vw;
   align-items: center;
   justify-content: space-between;
@@ -170,12 +179,11 @@ header #home h1 {
 header #home h2 {
   font-size: 100px;
   text-align: center;
-  color: #FFEF00;
+  color: var(--cyberyellow);
 }
 header #home .mirror {
   position: absolute;
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
 }
 header #home .mirror::after {
@@ -198,5 +206,58 @@ header #home .mirror::after {
   }
 }
 /* MY SKILLS ---------------------------------------------------------------- */
+.skills {
+  background-color: #707070;
+}
+.skills h2 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 100px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.skills .front, .skills .back, .skills .personal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  position: relative;
+  font-family: "Electrolize", sans-serif;
+  font-size: 50px;
+}
+.skills a {
+  display: flex;
+  align-items: center;
+}
+.skills a span {
+  margin-left: 20px;
+}
+.skills .personal {
+  padding-bottom: 100px;
+  margin: 0;
+}
+.skills .logo-front, .skills .logo-back, .skills .logo-personal {
+  display: flex;
+  background-color: var(--cyberyellow);
+  color: black;
+  max-height: 135px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.skills .logo-front p, .skills .logo-back p, .skills .logo-personal p {
+  margin: 0 10px;
+}
+.skills .js {
+  box-sizing: border-box;
+  border: 0.5px black solid;
+}
+.skills .br {
+  display: flex;
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=style.css.map */
