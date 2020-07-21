@@ -73,6 +73,7 @@ html {
 body {
   color: white;
   background-color: #0E0E0E;
+  --namecolor: #E40EE4;
 }
 
 a {
@@ -132,6 +133,7 @@ header .navbar .btn-drop > span {
 header .navbar .dropdown-content {
   display: none;
   position: absolute;
+  top: 50px;
   background-color: transparent;
   border: grey;
   min-width: 100px;
@@ -161,8 +163,9 @@ header #home h1 {
   font-size: 250px;
   padding-top: 200px;
   text-align: center;
-  color: #E40EE4;
+  color: var(--namecolor);
   margin-bottom: 350px;
+  animation: flicker 1.5s infinite alternate;
 }
 header #home h2 {
   font-size: 100px;
@@ -184,5 +187,16 @@ header #home .mirror::after {
   -webkit-background-clip: text;
   color: transparent;
 }
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: -0.2rem -0.2rem 1rem var(--namecolor), 0.2rem 0.2rem 1rem blue, 0 0 2rem var(--namecolor), 0 0 4rem var(--namecolor), 0 0 6rem var(--namecolor), 0 0 8rem var(--namecolor), 0 0 10rem var(--namecolor);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+/* MY SKILLS ---------------------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */

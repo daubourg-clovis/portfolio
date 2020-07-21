@@ -72,6 +72,7 @@ html {
 body{
     color: white;
     background-color: #0E0E0E;
+    --namecolor : #E40EE4;
 }
 
 a{
@@ -104,16 +105,20 @@ header{
         justify-content: space-between;
         background: rgb(45,29,81);
         background: linear-gradient(90deg, rgba(45,29,81,1) 0%, rgba(67,69,130,1) 12%, rgba(67,52,107,1) 100%);
+        
         .logo{
             font-size: 50px;
         }
+
         .navbar-end{
             display: flex;
             align-items: center;
         }
+
         nav{
             ul{
                 display: flex;
+
                 li{
                     @include titlefont(30px);
                     display: flex;
@@ -121,10 +126,12 @@ header{
                 }            
             }
         }
+
         .language{
             position: relative;
             display: inline-block;
         }
+
         .btn-drop{
             @include titlefont(30px);
             background-color: transparent;
@@ -132,55 +139,68 @@ header{
             cursor: pointer;
             color: white;
         }
+
         .btn-drop:hover, .btn-drop:focus{
             background-color: darken($color: rgb(45,29,81), $amount: 0);
         }
+
         .btn-drop > span {
             font-family: 'ElegantIcons';
         }
+
         .dropdown-content{
             display: none;
             position: absolute;
+            top: 50px;
             background-color: transparent;
             border: grey;
             min-width: 100px;
             overflow: auto;
             z-index: 1;
+            
             a{
                 display: block;
                 padding: 15px;
             }
+
             a:hover{
                 background-color: rgba(128, 128, 128, 0.096);
             }
         }
+
         .show{
             display: block;
         }
 
     }
+
     #home{
         width: 99vw;
         height: 1289px;
         background-image: url(medias/city-night.jpg);
         background-repeat: no-repeat;
+        
         h1,h2{
             font-family: 'Cyberfont';
         }
+
         h1{
             font-size: 250px;
             padding-top: 200px;
             text-align: center;
-            color: #E40EE4;
+            color: var(--namecolor);
             margin-bottom: 350px;
+            animation: flicker 1.5s infinite alternate;
 
         }
+        
         h2{
             font-size: 100px;
             text-align: center;
             color: #FFEF00;
            
         }
+
         .mirror{
             position: absolute;
             width: 100%;
@@ -188,6 +208,7 @@ header{
             box-sizing: border-box;
             
         } 
+
         .mirror::after{
             margin-top: 1rem;
             content:attr(data-text);
@@ -199,3 +220,29 @@ header{
         }
     }
 }
+
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem var(--namecolor),
+            0.2rem 0.2rem 1rem blue,
+            0 0 2rem var(--namecolor),
+            0 0 4rem var(--namecolor),
+            0 0 6rem var(--namecolor),
+            0 0 8rem var(--namecolor),
+            0 0 10rem var(--namecolor);
+        
+       
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+
+
+
+/* MY SKILLS ---------------------------------------------------------------- */
