@@ -174,7 +174,7 @@ header #home h1 {
   text-align: center;
   color: var(--namecolor);
   margin-bottom: 350px;
-  animation: flicker 1.5s infinite alternate;
+  animation: flicker 2s infinite alternate;
 }
 header #home h2 {
   font-size: 100px;
@@ -254,10 +254,6 @@ header #home .mirror::after {
 .skills .js {
   box-sizing: border-box;
   border: 0.5px black solid;
-}
-.skills .br {
-  display: flex;
-  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
