@@ -12,24 +12,28 @@
     <header>
         <div class="navbar">
             <p class="logo">PORTFOLIO</p>
-            <nav>
-                <ul>
-                    <li><a href="#title">Home</a> </li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="language">
-                <p><a href="#"><img src="medias/ukusflag.png" alt="mix of UK and US flag" width="85" height="45"></a></p>
-                <p><a href="#"><img src="medias/frenchflag.png" alt="French flag" width="85" height="45"></a></p>
+            <div class="navbar-end">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a> </li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="language">
+                    <button class="btn-drop" onclick="myFunction()">Language <span>C</span></button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <p><a href="#"><img src="medias/ukusflag.png" alt="mix of UK and US flag" width="85" height="45"></a></p>
+                        <p><a href="#"><img src="medias/frenchflag.png" alt="French flag" width="85" height="45"></a></p>
+                    </div>
+                </div>
             </div>
-            <p class="burger"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></p>
-        </div>
-        <div id="title">
+            </div>
+        <div id="home">
             <h1>Clovis<br>DAUBOURG</h1>
-            <h2>Web Developer</h2>
+            <h2 class="mirror" data-text="Web Developer">Web Developer</h2>
         </div>
     </header>
     <main>

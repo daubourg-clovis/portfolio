@@ -52,7 +52,7 @@ table {
 
 /*Fonts ------------- */
 @font-face {
-  font-family: "Conv_Cyberpunk";
+  font-family: "Cyberfont";
   src: url("fonts/Cyberpunk.eot");
   src: local("☺"), url("fonts/Cyberpunk.woff") format("woff"), url("fonts/Cyberpunk.ttf") format("truetype"), url("fonts/Cyberpunk.svg") format("svg");
   font-weight: normal;
@@ -73,7 +73,6 @@ html {
 body {
   color: white;
   background-color: #0E0E0E;
-  --commonfont: "Aldrich", sans-serif;
 }
 
 a {
@@ -84,31 +83,106 @@ a {
 /* Header ------------------------- */
 header .navbar {
   display: flex;
-  font-family: var(--commonfont);
+  font-family: "Aldrich", sans-serif;
+  font-size: 50px;
   overflow: hidden;
   position: fixed;
+  padding: 0 15px;
   top: 0;
   width: 100vw;
+  align-items: center;
+  justify-content: space-between;
   background: #2d1d51;
   background: linear-gradient(90deg, #2d1d51 0%, #434582 12%, #43346b 100%);
 }
 header .navbar .logo {
   font-size: 50px;
 }
+header .navbar .navbar-end {
+  display: flex;
+  align-items: center;
+}
 header .navbar nav ul {
   display: flex;
 }
 header .navbar nav ul li {
+  font-family: "Aldrich", sans-serif;
   font-size: 30px;
+  display: flex;
+  margin: 15px;
 }
-header .navbar .burger {
-  display: hidden;
+header .navbar .language {
+  position: relative;
+  display: inline-block;
 }
-header #title {
-  width: 100vw;
+header .navbar .btn-drop {
+  font-family: "Aldrich", sans-serif;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+header .navbar .btn-drop:hover, header .navbar .btn-drop:focus {
+  background-color: #2d1d51;
+}
+header .navbar .btn-drop > span {
+  font-family: "ElegantIcons";
+}
+header .navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  border: grey;
+  min-width: 100px;
+  overflow: auto;
+  z-index: 1;
+}
+header .navbar .dropdown-content a {
+  display: block;
+  padding: 15px;
+}
+header .navbar .dropdown-content a:hover {
+  background-color: rgba(128, 128, 128, 0.096);
+}
+header .navbar .show {
+  display: block;
+}
+header #home {
+  width: 99vw;
   height: 1289px;
   background-image: url(medias/city-night.jpg);
   background-repeat: no-repeat;
+}
+header #home h1, header #home h2 {
+  font-family: "Cyberfont";
+}
+header #home h1 {
+  font-size: 250px;
+  padding-top: 200px;
+  text-align: center;
+  color: #E40EE4;
+  margin-bottom: 350px;
+}
+header #home h2 {
+  font-size: 100px;
+  text-align: center;
+  color: #FFEF00;
+}
+header #home .mirror {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+header #home .mirror::after {
+  margin-top: 1rem;
+  content: attr(data-text);
+  display: block;
+  transform: rotateX(180deg);
+  background-image: linear-gradient(180deg, rgba(255, 238, 0, 0.3) 10%, rgba(255, 238, 0, 0.3));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
