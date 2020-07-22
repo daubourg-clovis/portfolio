@@ -75,6 +75,7 @@ body {
   background-color: #0E0E0E;
   --namecolor: #E40EE4;
   --cyberyellow: #FFEF00;
+  --sectionbackground: #707070;
 }
 
 a {
@@ -207,7 +208,7 @@ header #home .mirror::after {
 }
 /* MY SKILLS ---------------------------------------------------------------- */
 .skills {
-  background-color: #707070;
+  background-color: var(--sectionbackground);
 }
 .skills h2 {
   font-family: "Aldrich", sans-serif;
@@ -671,6 +672,33 @@ header #home .mirror::after {
   background: url(medias/placeholder2.PNG) no-repeat;
   background-size: contain;
   transition: linear 0.6s;
+}
+
+/* ABOUT ME ---------------------------------------------------------------- */
+.aboutme {
+  background-color: var(--sectionbackground);
+}
+.aboutme h2 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 100px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.aboutme p {
+  font-family: "Electrolize", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+}
+.aboutme footer {
+  text-align: end;
+  margin-top: 50px;
+  padding-bottom: 150px;
+}
+.aboutme footer span {
+  font-size: 1rem;
+}
+.aboutme footer img {
+  width: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
