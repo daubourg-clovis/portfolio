@@ -309,3 +309,195 @@ header{
     
 
 }
+
+
+/* Work --------------------------------------------------------------------- */
+
+.work{
+    h2{
+        animation:glitch2 2s steps(100) infinite;
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+    .glitch{
+        position: relative;
+        @include titlefont(100px);
+    }
+
+
+}
+
+
+
+$r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
+
+@mixin mini-glitch($c1, $c2, $coeff, $start, $end){
+    $interval: $end - $start;
+    @for $i from $start through $end {
+      #{$i * 1%} {   
+        @if $i < $start + ($interval/2){
+          $px : $px + $coeff;$px2: -$px;   
+          text-shadow: #{$px}px 0 0 $c1, #{$px2}px 0 0 $c2;
+        }
+        @else{
+          $px : $px - 1;$px2: -$px;  
+          text-shadow: #{$px}px 0 0 $c1, #{$px2}px 0 0 $c2;
+        } 
+      }
+    }
+    $px: 0;$px2: 0;
+}
+
+@mixin big-glitch($c1, $c2, $distance, $start, $end){
+    @for $i from $start through $end {   
+      #{$i * 1%} {
+        @if $i == $end {
+            text-shadow: 0 0 0 $c1, 0 0 0 $c2;
+        }
+        @else{   
+            $px : $distance;$px2: -$px;
+            text-shadow: #{$px}px 0 0 $c1, #{$px2}px 0 0 $c2;
+        }
+      }
+    }
+    $px: 0;$px2: 0;
+}
+
+@keyframes glitch2 {
+      
+    @include mini-glitch($r, $b, 1, 0, 10);
+    @include mini-glitch($r, $g, 0.5, 11, 20);  
+    @include mini-glitch($b, $g, 0.7, 21, 40);
+    
+    @include big-glitch($b, $g, 50, 41, 42);
+    
+    @include mini-glitch($r, $g, 0.5, 43, 50); 
+    @include mini-glitch($r, $b, 1, 51, 60);
+    
+    @include big-glitch($r, $g, 30, 61, 62); 
+    
+    @include mini-glitch($r, $b, 0.5, 63, 70);
+    
+    @include big-glitch($r, $b, 70, 71, 72);
+    
+    @include mini-glitch($r, $b, 1, 73, 80);
+    @include mini-glitch($r, $g, 0.5, 81, 90);
+  
+    @include big-glitch($g, $b, 60, 91, 92);
+    
+    @include mini-glitch($b, $g, 0.7, 92, 100);
+}
+
+.work{
+
+    .work-container{
+        max-width: 1650px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    
+    .work-1, .work-2, .work-3{
+        display: flex;
+        margin-bottom: 150px;
+        align-items: center;
+    }
+
+    .work-text{
+        @include maintext(25px);
+        line-height: 50px;
+        vertical-align: middle;
+        margin-left: 100px;
+        min-width: 950px;
+        max-width: 950px;
+    }
+
+
+    strong{
+        @include maintext(30px);
+        font-weight: 700;
+        color: var(--cyberyellow);
+    }
+
+    .btn-seemore{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .seemore{
+        display: inline-block;
+        text-align: center;
+        width: 230px;
+        height: 60px; 
+        border: 0;
+        outline: none;
+        background-color: black;
+        color: black;
+        cursor: pointer;
+        position: relative;
+        text-transform: uppercase;
+        clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+    }
+    
+    .seemore-content{
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        background-color: var(--cyberyellow);
+        clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+      
+    }
+
+    .img-1{
+        background: url(medias/dashboard-glitch.gif) no-repeat;
+        display: inline-block;
+        background-size: contain;
+        width: 500px;
+        height: 281px;
+        transition: linear 1s ;
+    }
+
+    .work-1:hover .img-1{
+        background: url(medias/dashboard.PNG) no-repeat;
+        background-size: contain;
+        transition: linear .6s;
+    }
+
+    .img-2{
+        background: url(medias/placeholder1-glitch.gif) no-repeat;
+        display: inline-block;
+        background-size: contain;
+        width: 500px;
+        height: 281px;
+        transition: linear 1s ;
+    }
+
+    .work-2:hover .img-2{
+        background: url(medias/placeholder1.PNG) no-repeat;
+        background-size: contain;
+        transition: linear .6s;
+    }
+
+    .img-3{
+        background: url(medias/placeholder2-glitch.gif) no-repeat;
+        display: inline-block;
+        background-size: contain;
+        width: 500px;
+        height: 281px;
+        transition: linear 1s ;
+    }
+
+    .work-3:hover .img-3{
+        background: url(medias/placeholder2.PNG) no-repeat;
+        background-size: contain;
+        transition: linear .6s;
+    }
+
+
+}
