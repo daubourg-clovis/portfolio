@@ -639,7 +639,7 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
         }
 
         .btn-send{
-            @include maintext(30px);
+            
             display: inline-block;
             text-align: center;
             width: 300px;
@@ -655,6 +655,7 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
         }
 
         .btn__content {
+            @include maintext(30px);
             color: black;
             display: flex;
             align-items: center;

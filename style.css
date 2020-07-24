@@ -800,8 +800,6 @@ header #home .mirror::after {
   text-align: end;
 }
 .contact .form .btn-send {
-  font-family: "Electrolize", sans-serif;
-  font-size: 30px;
   display: inline-block;
   text-align: center;
   width: 300px;
@@ -816,6 +814,8 @@ header #home .mirror::after {
   clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
 }
 .contact .form .btn__content {
+  font-family: "Electrolize", sans-serif;
+  font-size: 30px;
   color: black;
   display: flex;
   align-items: center;
