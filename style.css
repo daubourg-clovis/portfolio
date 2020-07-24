@@ -238,7 +238,7 @@ header #home .mirror::after {
   border: 0.5px black solid;
 }
 .skills .logo-open {
-  margin-right: -705px;
+  margin-right: -390px;
   transition: ease-in-out 0.8s;
 }
 
@@ -1079,6 +1079,19 @@ header #home .mirror::after {
   }
   20%, 24%, 55% {
     box-shadow: none;
+  }
+}
+/* RESPONSIVE ----------------------------------------------------------------------------------------------------------- */
+/* Ultra wide */
+@media only screen and (min-width: 2500px) {
+  .logo-front, .logo-back, .logo-personal {
+    margin-right: -1750px;
+    transition: ease-in-out 0.8s;
+  }
+
+  .logo-open {
+    margin-right: -705px;
+    transition: ease-in-out 0.8s;
   }
 }
 

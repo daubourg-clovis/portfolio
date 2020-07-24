@@ -286,7 +286,7 @@ header{
     }
 
     .logo-open{
-        margin-right:-705px;
+        margin-right:-390px;
         transition: ease-in-out .8s;
     }
 
@@ -972,4 +972,26 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
     20%, 24%, 55% {        
         box-shadow: none;
     }    
+}
+
+
+/* RESPONSIVE ----------------------------------------------------------------------------------------------------------- */
+
+/* Ultra wide */
+
+@media only screen and (min-width:2500px){
+
+    .logo-front, .logo-back, .logo-personal{
+        margin-right: -1750px;
+        transition: ease-in-out .8s;
+    }
+
+    
+    .logo-open{
+        margin-right:-705px;
+        transition: ease-in-out .8s;
+    }
+
+
+
 }
