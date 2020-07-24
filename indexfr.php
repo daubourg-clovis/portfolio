@@ -159,13 +159,13 @@
                         </div>
                         <div class="message">
                             <label for="message">Message :</label>
-                            <textarea name="message" class="textarea" cols="30" rows="8" required disabled></textarea>
+                            <textarea name="message" class="textarea" cols="30" rows="8" required></textarea>
                         </div>
                     </div>
                     <div class="send">
                         <div class="btn-send">
                             <button type="submit">
-                                <span class="btn__content">SEND_</span>
+                                <span class="btn__content">ENVOYER_</span>
                                 <span class="btn__glitch"></span>
                                 <span class="btn__label">DATA</span>
                             </button>
