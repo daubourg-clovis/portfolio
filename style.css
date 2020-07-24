@@ -140,19 +140,20 @@ header .navbar .language a {
 }
 header #home {
   width: 100vw;
-  height: 1289px;
-  background-image: url(medias/city-night.jpg);
+  height: 1719px;
+  background-image: url(medias/citynight-wide.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 header #home h1, header #home h2 {
   font-family: "Cyberfont";
 }
 header #home h1 {
   font-size: 230px;
-  padding-top: 200px;
+  padding-top: 450px;
   text-align: center;
   color: var(--namecolor);
-  margin-bottom: 350px;
+  margin-bottom: 550px;
 }
 header #home h2 {
   font-size: 100px;
@@ -224,7 +225,7 @@ header #home .mirror::after {
   text-align: center;
   font-size: 30px;
   position: absolute;
-  margin-right: -1250px;
+  margin-right: -1750px;
   transition: ease-in-out 0.8s;
   right: 0;
   z-index: 1;
@@ -237,11 +238,7 @@ header #home .mirror::after {
   border: 0.5px black solid;
 }
 .skills .logo-open {
-  margin-right: -385px;
-  transition: ease-in-out 0.8s;
-}
-.skills .logo-open-2 {
-  margin-right: -385px;
+  margin-right: -705px;
   transition: ease-in-out 0.8s;
 }
 
@@ -808,12 +805,12 @@ header #home .mirror::after {
   outline: none;
   background-color: black;
   color: black;
-  cursor: pointer;
   position: relative;
   text-transform: uppercase;
   clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
 }
 .contact .form .btn__content {
+  cursor: pointer;
   font-family: "Electrolize", sans-serif;
   font-size: 30px;
   color: black;

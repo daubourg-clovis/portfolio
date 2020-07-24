@@ -13,7 +13,7 @@ toggleOne.addEventListener('click', function(e){
 toggleTwo.addEventListener('click', function(e){
   e.preventDefault();
   const logoBack = document.querySelector('.logo-back');
-  logoBack.classList.toggle('logo-open-2');
+  logoBack.classList.toggle('logo-open');
   
 });
 

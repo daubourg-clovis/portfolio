@@ -160,9 +160,10 @@ header{
 
     #home{
         width: 100vw;
-        height: 1289px;
-        background-image: url(medias/city-night.jpg);
+        height: 1719px;
+        background-image: url(medias/citynight-wide.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         
         h1,h2{
             font-family: 'Cyberfont';
@@ -170,10 +171,10 @@ header{
 
         h1{
             font-size: 230px;
-            padding-top: 200px;
+            padding-top: 450px;
             text-align: center;
             color: var(--namecolor);
-            margin-bottom: 350px;
+            margin-bottom: 550px;
            // animation: flicker 2s infinite alternate;
 
         }
@@ -270,7 +271,7 @@ header{
         text-align: center;
         font-size: 30px;
         position: absolute;
-        margin-right: -1250px;
+        margin-right: -1750px;
         transition: ease-in-out .8s;
         right: 0;
         z-index: 1 ;
@@ -285,14 +286,11 @@ header{
     }
 
     .logo-open{
-        margin-right:-385px;
+        margin-right:-705px;
         transition: ease-in-out .8s;
     }
 
-    .logo-open-2{
-        margin-right:-385px;
-        transition: ease-in-out .8s;
-    }
+
     
 
 }
@@ -639,7 +637,6 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
         }
 
         .btn-send{
-            
             display: inline-block;
             text-align: center;
             width: 300px;
@@ -648,13 +645,13 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
             outline: none;
             background-color: black;
             color: black;
-            cursor: pointer;
             position: relative;
             text-transform: uppercase;
             clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
         }
 
         .btn__content {
+            cursor: pointer;
             @include maintext(30px);
             color: black;
             display: flex;

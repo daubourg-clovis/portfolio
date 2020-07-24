@@ -166,7 +166,7 @@
                     <div class="send">
                         <div class="btn-send">
                             <button type="submit">
-                                <span class="btn__content">ENVOYER_</span>
+                                <span class="btn__content">SEND_</span>
                                 <span class="btn__glitch"></span>
                                 <span class="btn__label">DATA</span>
                             </button>
