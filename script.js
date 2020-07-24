@@ -1,35 +1,26 @@
+const toggleOne = document.querySelector('.toggle-1');
+const toggleTwo = document.querySelector('.toggle-2');
+const toggleThree = document.querySelector('.toggle-3');
 
 
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-//   }
+toggleOne.addEventListener('click', function(e){
+  e.preventDefault();
+  const logoFront = document.querySelector('.logo-front');
+  logoFront.classList.toggle('logo-open');
   
-//   // Close the dropdown if the user clicks outside of it
-//   window.onclick = function(event) {
-//     if (!event.target.matches('.btn-drop')) {
-//       var dropdowns = document.getElementsByClassName("dropdown-content");
-//       var i;
-//       for (i = 0; i < dropdowns.length; i++) {
-//         var openDropdown = dropdowns[i];
-//         if (openDropdown.classList.contains('show')) {
-//           openDropdown.classList.remove('show');
-//         }
-//       }
-//     }
-//   }
+});
 
-function showLanguages() {
-  $(".dropdown-language").toggleClass("show");
-}
+toggleTwo.addEventListener('click', function(e){
+  e.preventDefault();
+  const logoBack = document.querySelector('.logo-back');
+  logoBack.classList.toggle('logo-open-2');
+  
+});
 
-window.onclick = function(event) {
-  if (!event.target.matches('.lang-drpdwn-btn')) {
-    var dropdowns = $(".dropdown-language");
-    for (let i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+toggleThree.addEventListener('click', function(e){
+  e.preventDefault();
+  console.log(toggleThree, 'clicué');
+  const logoPersonal = document.querySelector('.logo-personal');
+  logoPersonal.classList.toggle('logo-open');
+  
+});

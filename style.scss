@@ -71,13 +71,13 @@ html {
 
 body{
     color: white;
-    background-color: #2D1F54;
+    background-color: #1d1b2c;
     --namecolor : #E40EE4;
     --cyberyellow : #FFEF00;
-    --sectionbackground : #42427f;
+    --sectionbackground : #2c2a49;
     --blueneon : #00F1FF;
-    --stock-colors :  #707070 #0E0E0E;
-
+    --stock-colors :  #707070 #0E0E0E #2D1F54;
+    overflow-x:hidden;
 }
 
 a{
@@ -159,7 +159,7 @@ header{
     }
 
     #home{
-        width: 99vw;
+        width: 100vw;
         height: 1289px;
         background-image: url(medias/city-night.jpg);
         background-repeat: no-repeat;
@@ -246,9 +246,10 @@ header{
         position: relative;
         @include maintext(50px);
     }
-    a{
+    .toggle-1, .toggle-2, .toggle-3{
        display: flex;
        align-items: center;
+       cursor: pointer;
        span{
            margin-left: 20px;
        }
@@ -269,6 +270,8 @@ header{
         text-align: center;
         font-size: 30px;
         position: absolute;
+        margin-right: -1250px;
+        transition: ease-in-out .8s;
         right: 0;
         z-index: 1 ;
         
@@ -279,6 +282,16 @@ header{
     .js{
         box-sizing: border-box;
         border: 0.5px black solid;
+    }
+
+    .logo-open{
+        margin-right:-385px;
+        transition: ease-in-out .8s;
+    }
+
+    .logo-open-2{
+        margin-right:-385px;
+        transition: ease-in-out .8s;
     }
     
 
@@ -533,7 +546,6 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
         margin-bottom: 150px;
         position: relative;
         letter-spacing: 0.02em;
-        text-transform: uppercase;
         text-shadow: 0 0 0.15em #1da9cc;
         user-select: none;
         white-space: nowrap;
@@ -855,14 +867,9 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
 
 .footer{
     margin-top: 150px;
-    // background-image: url(medias/placeholdervideo.png);
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // min-width: 100%;
-    // height: 1080px;
     position: relative;
     .bg-vid{
-        min-width: 99vw;
+        min-width: 100vw;
         z-index: 1;
     }
     .direct{
