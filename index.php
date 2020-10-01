@@ -127,7 +127,7 @@
                 <div>
                     <p>I’m a 25 year old male currently living in France. <br><br>
                         I’m passionate about the technologies and video games, that’s why after trying to major in English in college i’ve decided to change vocation and to train to become a developer.<br>
-                        I’m following class and realising projects in the « Access Code School » a training center in Besançon, the east of France. I’ve started my training during the world health crisis of coronavirus, so i’m used to work remotely, but i’d also love to come into an office. <br><br>
+                        I’m following class and realising projects in the « Access Code School » a training center in Besançon, east of France. I’ve started my training during the world health crisis of coronavirus, so i’m used to work remotely, but i’d also love to come into an office. <br><br>
                         I like reading novels or watching movies about a dystopian future like the MaddAddam trilogy from Margaret Atwood or medieval-fantasy like The Lord of The Rings trilogy by Peter Jackson. No, 3 is not my favorite number. <br><br>
                         I’d like to work abroad to discover new countries, new people and new culture and new languages if I’m not in a French or English speaking country. <br><br>
                     </p>

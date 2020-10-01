@@ -126,9 +126,9 @@
                 </header>
                 <div>
                     <p>Je suis un homme de 25ans vivant actuellement en France.<br><br>
-                        Je suis passionné de nouvelles technologies et de jeux vidéo, c'est pourquoi après avoir essayé de faire un licence d'anglais j'ai décidé de changé de voie.<br>
-                        Je fais formation à l'« Access Code School », un centre de formation à Besançon. J'ai commencé ma formation pendant la crise sanitaire liée au coronavirus, donc je suis habitué au télétravail, mais j'aimerais aussi pouvoir venir travailler dans des bureaux. <br><br>
-                        J'aime regarder des films ou lire des romans de dystopie comme la trilogie "MaddAddam" de Margaret Atwood ou de la medieval-fantasy comme la trilogie du Seigneur Des Anneaux réalisée par Peter Jackson.<br><br>
+                        Je suis passionné de nouvelles technologies et de jeux vidéo, c'est pourquoi après avoir essayé de faire un licence d'anglais j'ai décidé de changer de voie.<br>
+                        Je fais une formation à l'« Access Code School », un centre à Besançon. J'ai commencé celle-ci pendant la crise sanitaire liée au coronavirus, donc je suis habitué au télétravail, mais j'aimerais aussi pouvoir venir travailler dans des bureaux. <br><br>
+                        J'aime regarder des films ou lire des romans de dystopie comme la trilogie "MaddAddam" de Margaret Atwood ou de la medieval-fantasy avec la trilogie du Seigneur Des Anneaux réalisée par Peter Jackson.<br><br>
                     </p>
                 </div>
                 <footer>
