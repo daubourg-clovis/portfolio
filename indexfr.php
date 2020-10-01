@@ -141,25 +141,25 @@
                 <h2 data-break="CONTACT"><span>CONTACT</span></h2>
             </header>
             <div class="form">
-                <form action="" method="post">
+                <form  method="post">
                     <div class="form-top">
                         <div class="name">
                             <label for="name">Nom :</label>
-                            <input type="text" name="name">
+                            <input type="text" name="name" id="name" required>
                         </div>
                         <div class="email">
                             <label for="email">Email :</label>
-                            <input type="email" name="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                     </div>
                     <div class="form-bot">
                         <div class="subject">
                             <label for="subject">Sujet :</label>
-                            <input type="text" name="subject">
+                            <input type="text" name="subject" id="subject" required>
                         </div>
                         <div class="message">
                             <label for="message">Message :</label>
-                            <textarea name="message" class="textarea" cols="30" rows="8" required></textarea>
+                            <textarea name="message" class="textarea" cols="30" rows="8" id="message" required ></textarea>
                         </div>
                     </div>
                     <div class="send">
@@ -177,7 +177,7 @@
         
     </main>
     <footer class="footer ">
-        <video autoplay loop muted src="medias/bg-vid_citynight.mp4" type="video/mp4" class="bg-vid"></video>
+        <video autoplay loop muted src="medias/bg-vid_citynight.mp4"  class="bg-vid"></video>
          <div class="direct container">
             <div class="directcontact">
                 <h3>Contact direct</h3>
