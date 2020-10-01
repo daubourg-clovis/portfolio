@@ -97,11 +97,11 @@
                     <div class="placeholder1 work-2">
                         <div class="img-2"></div> 
                         <div class="work-text">
-                            <p><strong>Projet :</strong> intégration de maquette.</p>
+                            <p><strong>Projet :</strong> site de petites annonces en groupe de 2, je me suis occupé de la partie front-end.</p>
                             <p><strong>Technologies utilisées :</strong> HTML5, CSS3.</p>                  
-                            <p><strong>Langue :</strong> anglais.</p>
+                            <p><strong>Langue :</strong> français.</p>
                             <div class="btn-seemore">
-                                <p class="seemore"><a href="https://clovisd.promo-39.codeur.online/integration3/" target="_blank" rel="noopener noreferrer" class="seemore-content">See more ></a></p> 
+                                <p class="seemore"><a href="https://clovisd.promo-39.codeur.online/integration3/" target="_blank" rel="noopener noreferrer" class="seemore-content">Voir plus ></a></p> 
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                             <p><strong>Technologies utilisées :</strong> HTML5, CSS3, Javascript, JQuery.</p>                  
                             <p><strong>Langue :</strong> anglais.</p>
                             <div class="btn-seemore">
-                                <p class="seemore"><a href="https://clovisd.promo-39.codeur.online/integrationgroupe-4-leaz-clovisd/" target="_blank" rel="noopener noreferrer" class="seemore-content">See more ></a></p> 
+                                <p class="seemore"><a href="https://clovisd.promo-39.codeur.online/integrationgroupe-4-leaz-clovisd/" target="_blank" rel="noopener noreferrer" class="seemore-content">Voir plus ></a></p> 
                             </div>
                         </div>
                     </div>

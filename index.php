@@ -86,7 +86,7 @@
                     <div class="dashboard work-1">
                         <div class="img-1"></div>                       
                         <div class="work-text">
-                            <p><strong>Project :</strong> build a dashboard for a caretaker who has to change a building's lightbulb.</p>
+                            <p><strong>Project :</strong> build a dashboard for a caretaker who has to change a building's lightbulbs.</p>
                             <p><strong>Technologies used :</strong>  Bootstrap4, HTML5, CSS3, JQuery,MySQL.</p>                  
                             <p><strong>Language :</strong> French.</p>
                             <div class="btn-seemore">
@@ -97,11 +97,11 @@
                     <div class="placeholder1 work-2">
                         <div class="img-2"></div> 
                         <div class="work-text">
-                            <p><strong>Project :</strong> mockup integration.</p>
-                            <p><strong>Technologies used :</strong> HTML5, CSS3.</p>                  
-                            <p><strong>Language :</strong> English.</p>
+                            <p><strong>Project :</strong> classified ads website in groups of 2, I had to do the front-end part.</p>
+                            <p><strong>Technologies used :</strong> HTML5, CSS3/Sass, Javascript, Bootstrap5, PhP, MySQL .</p>                  
+                            <p><strong>Language :</strong> French.</p>
                             <div class="btn-seemore">
-                                <p class="seemore"><a href="https://clovisd.promo-39.codeur.online/integration3/" target="_blank" rel="noopener noreferrer" class="seemore-content">See more ></a></p> 
+                                <p class="seemore"><a href="https://vanessak.promo-39.codeur.online/annonces/public/" target="_blank" rel="noopener noreferrer" class="seemore-content">See more ></a></p> 
                             </div>
                         </div>
                     </div>

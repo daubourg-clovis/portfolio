@@ -637,7 +637,7 @@ header #home .mirror::after {
   transition: ease-in-out 0.6s;
 }
 .work .img-2 {
-  background: url(medias/placeholder1-glitch.gif) no-repeat;
+  background: url(medias/coxymarket-glitch.gif) no-repeat;
   display: inline-block;
   background-size: contain;
   width: 500px;
@@ -649,7 +649,7 @@ header #home .mirror::after {
   transition: ease-in-out 0.6s;
 }
 .work .work-2:hover .img-2 {
-  background: url(medias/placeholder1.PNG) no-repeat;
+  background: url(medias/coxymarket.JPG) no-repeat;
   background-size: contain;
   -moz-transition: ease-in-out 0.6s;
   -webkit-transition: ease-in 0.6s;
