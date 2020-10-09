@@ -1304,13 +1304,13 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
 
     .work{
         .work-container{
-            max-width: 768px;
+            max-width: 480px;
             width: 100%;
             margin: 0 auto;
         }
         .work-text{
-            min-width: 768px;
-            max-width: 768px;
+            min-width: 480px;
+            max-width: 480px;
             margin: 0 auto;
             padding: 0 15px;
         }
@@ -1319,14 +1319,18 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
         }
         .img-1, .img-2, .img-3{
             margin: 0 auto;
-            width: 700px;
+            width: 450px;
             height: 477px;
+            margin-bottom: -150px;
         }
     }
 
     .aboutme{
         p{
             padding: 0 15px;
+        }
+        footer p{
+            font-size: 25px;
         }
     }
 
