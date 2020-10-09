@@ -1152,6 +1152,22 @@ header #home .mirror::after {
     width: 850px;
     height: 477px;
   }
+
+  .aboutme p {
+    padding: 0 25px;
+  }
+
+  .contact .form .email input {
+    width: 380px;
+  }
+
+  .footer .bg-vid {
+    max-width: 100vw;
+  }
+  .footer .direct {
+    top: -85px;
+    left: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

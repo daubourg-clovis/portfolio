@@ -1069,6 +1069,31 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
         }
     }
 
+    .aboutme{
+        p{
+            padding: 0 25px;
+        }
+    }
+
+    .contact{
+        .form{
+            .email input{
+                width: 380px;
+            }
+        }
+    }
+
+    .footer{
+        .bg-vid{
+            max-width: 100vw;
+        }
+
+        .direct{
+            top: -85px;
+            left: 15px;
+        }
+    }
+
 }
 
 
