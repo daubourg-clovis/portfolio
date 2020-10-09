@@ -1038,19 +1038,39 @@ $r: rgba(255,0,0,1); $g: rgba(0,255,0,1); $b: rgba(0,0,255,1); $px: 0; $px2:0;
         }
     }
 
-}
 
-.skills{
-    .logo-open{
-        margin-right: 0px;
+    .skills{
+        .logo-open{
+            margin-right: 0px;
+        }
+        .front, .back, .personal{
+            margin-left: 25px;
+        }
     }
-}
 
-
-.work{
-    .work-container{
-        max-width: 992px;
-        width: 100%;
-        margin: 0 auto;
+    .work{
+        .work-container{
+            max-width: 992px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .work-text{
+            max-width: 850px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .work-1, .work-2, .work-3{
+            flex-wrap: wrap;
+        }
+        .img-1, .img-2, .img-3{
+            margin: 0 auto;
+            width: 850px;
+            height: 477px;
+        }
     }
+
 }
+
+
+
+

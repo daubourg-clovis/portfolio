@@ -1126,15 +1126,32 @@ header #home .mirror::after {
   header #home h2 {
     font-size: 75px;
   }
-}
-.skills .logo-open {
-  margin-right: 0px;
-}
 
-.work .work-container {
-  max-width: 992px;
-  width: 100%;
-  margin: 0 auto;
+  .skills .logo-open {
+    margin-right: 0px;
+  }
+  .skills .front, .skills .back, .skills .personal {
+    margin-left: 25px;
+  }
+
+  .work .work-container {
+    max-width: 992px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .work .work-text {
+    max-width: 850px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  .work .work-1, .work .work-2, .work .work-3 {
+    flex-wrap: wrap;
+  }
+  .work .img-1, .work .img-2, .work .img-3 {
+    margin: 0 auto;
+    width: 850px;
+    height: 477px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
